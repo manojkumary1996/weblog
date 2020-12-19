@@ -1,0 +1,79 @@
+<div class="row" id="edit">
+  <div class="col-sm-12">
+    <div class="card-text-blank">
+      <div class="card-body">
+        <div class="card-title text-center mb-3">
+          <h1 class="d-5">Edit Profile</h1>
+        </div>
+        <div class="card-text">
+          <div class="row">
+            <div class="col-sm-3 col-md-3">
+              <img [src]="user.photoURL" width="200" height="200" class="img-circle">
+            </div>
+            <div class="col-sm-1 col-md-1"></div>
+            <div class="card col-sm-8 col-md-8">
+              <div class="form-group row mt-3">
+                <label class="col-sm-3 col-form-label">Name</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" placeholder="First name" [(ngModel)]="user.displayName">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Email</label>
+                <div class="col-sm-8">
+                  <input type="email" readonly class="form-control" [(ngModel)]="user.email">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Bio</label>
+                <div class="col-sm-8">
+                  <textarea class="form-control" rows=6 placeholder="Tell us something about yourself..."
+                    [(ngModel)]="user.bio"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="edit">
+  <div class="col-sm-12">
+    <div class="card-text-blank">
+      <div class="card-body">
+        <div class="card-text">
+          <div class="row">
+            <div class="card col-sm-5">
+              <div class="form-group">
+                <label class="col-form-label mt-2">Your Interests</label>
+                <div class="col-sm-12">
+                  <textarea class="form-control" rows=6 placeholder="I like to read sci-fi novels..."
+                    [(ngModel)]="user.interests"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="card col-sm-5">
+              <div class="form-group">
+                <label class="col-form-label mt-2">Your Hobbies <small><i>(Comma Separate Each
+                      Hobby)</i></small></label>
+                <div class="col-sm-12">
+                  <textarea class="form-control" rows=6 placeholder="Reading, Travelling, Gaming"
+                    [(ngModel)]="user.hobbies"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-outline-success round pull-right mb-5" (click)="update()">Update</button>
+        <div class="alert alert-success fade show pull-left mb-5" role="alert" *ngIf="message">
+          {{message}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+<div class="row" id="profile">
+  <div class="col-sm-12">
+    <div class="card text-blank mt-5">
+      <div class="card-body">
+        <!-- <div class="card-title text-center mb-3">
+            <h3>Profile</h3>
+          </div> -->
+        <!-- <hr/> -->
+        <div class="card-text mt-3">
+          <div class="row">
+            <div class="col-sm-3 text-center">
+              <img [src]="user.photoURL" height="200" width="200" class="img-circle">
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-8 ">
+              <div class="card text-center">
+                <h1>{{ user.firstName + ' ' + user.lastName }}</h1>
+              </div>
+              <h4>{{ user.email }}</h4>
+
+              <h5>{{ user.bio }}</h5>
+
+              <p>{{ user.interests }}</p>
+
+              <span class="badge badge-pill badge-success badge-lg ml-3" *ngFor="let hobby of user.hobbies">
+                {{ hobby }}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="profile">
+  <div class="col-sm-12">
+    <div class="card text-blank">
+      <div class="card-body">
+        <div class="card-title">
+          <h3>Posts by {{user.first_name}} ({{posts.length}})</h3>
+        </div>
+        <div class="card-text">
+          <app-post *ngFor="let post of posts" [post]="post"></app-post>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

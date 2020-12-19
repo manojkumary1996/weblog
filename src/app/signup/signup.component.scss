@@ -1,0 +1,35 @@
+// .background{
+//   background-color:#5cdb95;
+// }
+.background-left{
+    background-color:#2e7cf6;
+    background-image: url('/assets/Sign-Up-BG-Image.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left bottom;
+  }
+  
+  .background-right{
+    background-color:#2e7cf6;
+  }
+  
+  .card{
+    background-color:transparent;
+    color:#fff;
+  }
+  
+  .text-muted{
+    color:#fff !important;
+  }
+  
+  .btn[type=submit]{
+    border-radius: 50px;
+    border-color:#ff5964;
+    background-color:#ff5964;
+    color:#fff;
+  }
+  
+  h1{
+    color:#fff;
+  }
+  
