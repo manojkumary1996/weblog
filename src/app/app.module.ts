@@ -22,13 +22,13 @@ import { AngularEditorModule } from '@kolkov/angular-editor';
 import { FooterComponent } from './footer/footer.component';
 
 let firebaseConfig = {
-  apiKey: "AIzaSyC6FS2hDVFv2FX00duV0kYK6aB6rVtFT44",
-  authDomain: "scribe-804a3.firebaseapp.com",
-  databaseURL: "https://scribe-804a3.firebaseio.com",
-  projectId: "scribe-804a3",
-  storageBucket: "scribe-804a3.appspot.com",
-  messagingSenderId: "435630892776",
-  appId: "1:435630892776:web:bba7f59fb848b607020b5d"
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: ""
 };
 firebase.initializeApp(firebaseConfig);
 
